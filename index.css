@@ -1,0 +1,74 @@
+ body{
+            background-color: rgb(54, 105, 223);
+            background-image:url(https://cdn.pixabay.com/photo/2020/04/19/18/43/landscape-5064988_960_720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media (min-width:300px)
+        {
+            .container{
+                width:100%;
+                height: 50vh;
+                justify-content: center;
+            }
+        }
+         @keyframes rotatebox{
+            from{
+                transform:rotateY(0deg);
+            }
+            to{
+                transform:rotateY(360deg);
+            }
+        }
+        .container{
+            animation:rotatebox 4s ease 1;
+            height: 280px;
+            width: 40%;
+            margin:auto;
+            margin-top:10%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            filter:blur(0.1px);
+            justify-content: space-evenly;
+            border:2px solid white;
+            border-radius: 5px;
+            box-shadow:3px 3px 3px 3px rgba(20,20,20,0.3);
+        }
+        img{
+            height: 90px;
+            width: 20%;
+            border-radius: 50%;
+        }
+        input[type="email"],input[type="password"]{
+            width:90%;
+            height: 10%;
+            outline: none;
+            border:1px solid transparent;
+            border-radius:5px;
+            text-align: center;
+        }
+        .signbutton{
+            height: 12%;
+            width: 92%;
+            background-color: rgba(42, 220, 42, 0.848);
+            border:none;
+            border-radius: 5px;
+            font-size:small;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .signbutton:active{
+            background-color: rgb(4, 253, 4);
+        }
+        h2{
+            margin:0;
+        }
+        h1{
+            font-family:"Helvetica Neue",Arial, Helvetica, sans-serif;
+            color:white;
+            margin:0;
+        }
+        .fa-solid{
+            color:rgb(0, 255, 0);
+        }
